@@ -1,5 +1,5 @@
-library: library.db
-directory: ~/Music
+library: /var/lib/mpd/beets.db
+directory: /var/lib/mpd/music
 
 import:
     write: yes
@@ -12,7 +12,7 @@ import:
     quiet_fallback: skip
     none_rec_action: ask
     timid: no
-    log:
+    log: /var/lib/mpd/beets.log
     autotag: yes
     quiet: no
     singletons: no
@@ -71,7 +71,7 @@ ui:
         action: blue
 
 format_item: $artist - $album - $title
-format_album: $albumartist - $album
+format_album: $album
 time_format: '%Y-%m-%d %H:%M:%S'
 format_raw_length: no
 
@@ -80,11 +80,11 @@ sort_item: artist+ album+ disc+ track+
 sort_case_insensitive: yes
 
 paths:
-    default: $albumartist/$album%aunique{}/$track $title
-    singleton: Non-Album/$artist/$title
-    comp: Compilations/$album%aunique{}/$track $title
+    default: $album%aunique{}/$track $title
+    singleton: $artist - Singles/$title
+    comp: $album%aunique{}/$track $title
 
-statefile: state.pickle
+statefile: /var/lib/mpd/beets-state.pickle
 
 musicbrainz:
     host: musicbrainz.org
