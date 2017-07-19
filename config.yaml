@@ -34,11 +34,11 @@ ignore:
 ignore_hidden: yes
 
 replace:
-    '[\\/]': _
+    '[\\/]': '-'
     ^\.: _
     '[\x00-\x1f]': _
-    '[<>:"\?\*\|]': _
-    \.$: _
+    '[<>"\?\*\|]': _
+    ':': ' -'
     \s+$: ''
     ^\s+: ''
 path_sep_replace: _
@@ -46,11 +46,11 @@ asciify_paths: no
 art_filename: cover
 max_filename_length: 0
 
-plugins: []
+plugins: [inline]
 pluginpath: []
 threaded: yes
 timeout: 5.0
-per_disc_numbering: no
+per_disc_numbering: yes
 verbose: 0
 terminal_encoding:
 original_date: no
@@ -78,11 +78,17 @@ format_raw_length: no
 sort_album: albumartist+ album+
 sort_item: artist+ album+ disc+ track+
 sort_case_insensitive: yes
+item_fields:
+    isMultiDisc: |
+        u'yes' if
+            (int(disctotal) > 1) and (disctotal != '')
+        else
+            u''
 
 paths:
-    default: $album%aunique{}/$track $title
+    default: $album%aunique{}/%if{$isMultiDisc,CD-$disc/}$track $title
     singleton: $artist - Singles/$title
-    comp: $album%aunique{}/$track $title
+    comp: $album%aunique{}/%if{$isMultiDisc,CD-$disc/}$track $title
 
 statefile: /var/lib/mpd/beets-state.pickle
 
