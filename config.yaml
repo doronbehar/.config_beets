@@ -46,7 +46,7 @@ asciify_paths: no
 art_filename: cover
 max_filename_length: 0
 
-plugins: [inline]
+plugins: [inline, mbcollection, chroma, fromfilename, info, duplicates, edit, fetchart, ipfs, lastgenre, missing, mbsync]
 pluginpath: []
 threaded: yes
 timeout: 5.0
@@ -86,9 +86,9 @@ item_fields:
             u''
 
 paths:
-    default: $album%aunique{}/%if{$isMultiDisc,CD-$disc/}$track $title
+    default: $album%aunique{album, albumartist}/%if{$isMultiDisc,CD-$disc/}$track $title
     singleton: $artist - Singles/$title
-    comp: $album%aunique{}/%if{$isMultiDisc,CD-$disc/}$track $title
+    comp: $album%aunique{album, albumartist}/%if{$isMultiDisc,CD-$disc/}$track $title
 
 statefile: /var/lib/mpd/beets-state.pickle
 
@@ -96,7 +96,16 @@ musicbrainz:
     host: musicbrainz.org
     ratelimit: 1
     ratelimit_interval: 1.0
-    searchlimit: 5
+    searchlimit: 10
+    user: doronbehar
+
+include: [passwords.yaml]
+
+chrome:
+    auto: no
+
+ipfs:
+    auto: no
 
 match:
     strong_rec_thresh: 0.04
