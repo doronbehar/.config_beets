@@ -1,4 +1,4 @@
-library: /var/lib/mpd/beets.db
+library: /var/lib/beets/db
 directory: /var/lib/mpd/music
 
 import:
@@ -12,7 +12,7 @@ import:
     quiet_fallback: skip
     none_rec_action: ask
     timid: no
-    log: /var/lib/mpd/beets.log
+    log: ~/.local/share/beets/log
     autotag: yes
     quiet: no
     singletons: no
@@ -90,7 +90,7 @@ paths:
     singleton: $artist - Singles/$title
     comp: $album%aunique{album, albumartist}/%if{$isMultiDisc,CD-$disc/}$track $title
 
-statefile: /var/lib/mpd/beets-state.pickle
+statefile: ~/.cache/beets/state.pickle
 
 musicbrainz:
     host: musicbrainz.org
@@ -106,6 +106,10 @@ chrome:
 
 ipfs:
     auto: no
+
+lastgenre:
+    force: no
+    source: track
 
 match:
     strong_rec_thresh: 0.04
