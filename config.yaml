@@ -46,7 +46,7 @@ asciify_paths: no
 art_filename: cover
 max_filename_length: 0
 
-plugins: [inline, mbcollection, chroma, fromfilename, info, duplicates, edit, fetchart, ipfs, lastgenre, missing, mbsync]
+plugins: [inline, mbcollection, chroma, fromfilename, info, duplicates, edit, fetchart, ipfs, lastgenre, missing, mbsync, mpdstats, mpdupdate]
 pluginpath: []
 threaded: yes
 timeout: 5.0
