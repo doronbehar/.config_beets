@@ -70,7 +70,7 @@ ui:
         action_default: turquoise
         action: blue
 
-format_item: $artist - $album - $title
+format_item: ${format} % ${albumartist} - ${album} | CD-${disc} | ${track} ${title}
 format_album: $album
 time_format: '%Y-%m-%d %H:%M:%S'
 format_raw_length: no
