@@ -46,7 +46,7 @@ asciify_paths: no
 art_filename: cover
 max_filename_length: 0
 
-plugins: [inline, mbcollection, chroma, fromfilename, info, duplicates, edit, fetchart, ipfs, lastgenre, missing, mbsync, mpdstats, mpdupdate]
+plugins: [absubmit, acousticbrainz, inline, mbcollection, chroma, fromfilename, info, duplicates, edit, fetchart, ipfs, lastgenre, missing, mbsync, mpdstats, mpdupdate, lyrics]
 pluginpath: []
 threaded: yes
 timeout: 5.0
@@ -147,3 +147,8 @@ match:
     track_length_grace: 10
     track_length_max: 30
 
+absubmit:
+    auto: yes
+
+lyrics:
+    sources: google musixmatch
