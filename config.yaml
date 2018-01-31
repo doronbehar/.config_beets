@@ -99,8 +99,6 @@ musicbrainz:
     searchlimit: 10
     user: doronbehar
 
-include: [passwords.yaml]
-
 chrome:
     auto: no
 
@@ -152,3 +150,5 @@ absubmit:
 
 lyrics:
     sources: google musixmatch
+
+include: [passwords.yaml]
