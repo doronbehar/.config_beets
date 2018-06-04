@@ -46,7 +46,7 @@ asciify_paths: no
 art_filename: cover
 max_filename_length: 0
 
-plugins: [absubmit, acousticbrainz, inline, mbcollection, chroma, fromfilename, info, duplicates, edit, fetchart, ipfs, lastgenre, missing, mbsync, mpdstats, mpdupdate, lyrics]
+plugins: [absubmit, acousticbrainz, inline, mbcollection, chroma, fromfilename, info, duplicates, edit, fetchart, ipfs, lastgenre, missing, mbsync, mpdstats, mpdupdate, lyrics, smartplaylist]
 pluginpath: []
 threaded: yes
 timeout: 5.0
@@ -151,4 +151,4 @@ absubmit:
 lyrics:
     sources: google musixmatch
 
-include: [passwords.yaml]
+include: [passwords.yaml, playlists.yaml]
