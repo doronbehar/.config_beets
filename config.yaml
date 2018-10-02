@@ -127,6 +127,7 @@ ipfs:
 lastgenre:
     force: no
     source: track
+    count: 10
 
 match:
     strong_rec_thresh: 0.04
