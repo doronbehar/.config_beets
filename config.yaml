@@ -23,10 +23,10 @@ import:
 
 clutter: [Thumbs.DB, .DS_Store]
 ignore:
-- .*
-- '*~'
-- System Volume Information
-- lost+found
+    - .*
+    - '*~'
+    - System Volume Information
+    - lost+found
 ignore_hidden: yes
 
 replace:
@@ -165,4 +165,7 @@ absubmit:
 lyrics:
     sources: google musixmatch
 
-include: [passwords.yaml, playlists.yaml, locations.yaml]
+include: 
+    - passwords.yaml
+    - playlists.yaml
+    - locations.yaml
