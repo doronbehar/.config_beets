@@ -1,3 +1,5 @@
 passwords.yaml
 playlists.yaml
 locations.yaml
+spotify.yaml
+spotify_token.json

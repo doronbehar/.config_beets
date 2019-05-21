@@ -61,8 +61,10 @@ plugins:
     - mpdstats
     - mpdupdate
     - lyrics
+    - playlist
     - smartplaylist
     - replaygain
+    - spotify
 pluginpath: []
 threaded: yes
 timeout: 5.0
@@ -169,7 +171,8 @@ lyrics:
 replaygain:
     backend: gstreamer
 
-include: 
+include:
     - passwords.yaml
     - playlists.yaml
     - locations.yaml
+    - spotify.yaml
