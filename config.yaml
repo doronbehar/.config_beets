@@ -172,7 +172,4 @@ replaygain:
     backend: gstreamer
 
 include:
-    - passwords.yaml
-    - playlists.yaml
-    - locations.yaml
-    - spotify.yaml
+    - private.yaml

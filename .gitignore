@@ -1,5 +1,2 @@
-passwords.yaml
-playlists.yaml
-locations.yaml
-spotify.yaml
+private.yaml
 spotify_token.json
