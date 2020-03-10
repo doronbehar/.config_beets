@@ -65,7 +65,9 @@ plugins:
     - smartplaylist
     - replaygain
     - spotify
-pluginpath: []
+    - import_history
+pluginpath: 
+    - /var/src/beets-import_history/beetsplug
 threaded: yes
 timeout: 5.0
 per_disc_numbering: yes
