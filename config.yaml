@@ -171,6 +171,8 @@ absubmit:
 
 lyrics:
     sources: google musixmatch
+    # Takes too much network resources for not being particularly important
+    auto: no
 
 replaygain:
     backend: gstreamer
