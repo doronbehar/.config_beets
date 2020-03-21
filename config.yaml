@@ -66,8 +66,10 @@ plugins:
     - replaygain
     - spotify
     - import_history
+    - mark-unmatched
 pluginpath: 
     - /var/src/beets-import_history/beetsplug
+    - /var/src/beets-mark-unmatched/beetsplug
 threaded: yes
 timeout: 5.0
 per_disc_numbering: yes
@@ -168,6 +170,9 @@ match:
 
 absubmit:
     auto: yes
+
+mark-unmatched:
+    notify-command: "gotify push --title 'Beets Music importer' --priority 4"
 
 lyrics:
     sources: google musixmatch
