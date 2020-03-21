@@ -129,7 +129,9 @@ lastgenre:
     count: 10
 
 match:
-    strong_rec_thresh: 0.04
+    # Consider every match above 90% good enough for sparing the questions
+    # https://beets.readthedocs.io/en/stable/reference/config.html#autotagger-matching-options
+    strong_rec_thresh: 0.10
     medium_rec_thresh: 0.25
     rec_gap_thresh: 0.25
     max_rec:
