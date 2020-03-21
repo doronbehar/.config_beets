@@ -175,5 +175,8 @@ lyrics:
 replaygain:
     backend: gstreamer
 
+spotify:
+    source_weight: 1.0
+
 include:
     - private.yaml
