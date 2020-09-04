@@ -68,8 +68,8 @@ plugins:
     - import_history
     - mark-unmatched
 pluginpath: 
-    - /var/src/beets-import_history/beetsplug
-    - /var/src/beets-mark-unmatched/beetsplug
+    - /home/doron/repos/beets-import_history/beetsplug
+    - /home/doron/repos/beets-mark-unmatched/beetsplug
 threaded: yes
 timeout: 5.0
 per_disc_numbering: yes
