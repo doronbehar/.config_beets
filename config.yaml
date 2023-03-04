@@ -67,9 +67,11 @@ plugins:
     - spotify
     - import_history
     - mark-unmatched
+    - check
 pluginpath: 
     - /home/doron/repos/beets-import_history/beetsplug
     - /home/doron/repos/beets-mark-unmatched/beetsplug
+    - /home/doron/repos/beets-check/beetsplug
 threaded: yes
 timeout: 5.0
 per_disc_numbering: yes
