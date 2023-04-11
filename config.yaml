@@ -172,9 +172,6 @@ match:
 absubmit:
     auto: yes
 
-mark-unmatched:
-    notify-command: "gotify push --title 'Beets Music importer' --priority 4"
-
 lyrics:
     sources: google musixmatch
     # Takes too much network resources for not being particularly important
