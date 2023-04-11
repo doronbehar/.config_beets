@@ -45,7 +45,6 @@ max_filename_length: 0
 plugins:
     - absubmit
     - mbsubmit
-    - acousticbrainz
     - inline
     - mbcollection
     - chroma
