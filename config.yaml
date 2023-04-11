@@ -64,8 +64,8 @@ plugins:
     - smartplaylist
     - replaygain
     - spotify
-    - import_history
-    - mark-unmatched
+    - importhistory
+    - markunmatched
     - check
 pluginpath: 
     - /home/doron/repos/beets-import_history/beetsplug
