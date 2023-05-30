@@ -44,7 +44,6 @@ max_filename_length: 0
 
 plugins:
     - absubmit
-    - mbsubmit
     - inline
     - mbcollection
     - chroma
@@ -65,11 +64,12 @@ plugins:
     - replaygain
     - spotify
     - importhistory
-    - markunmatched
+    # See: https://github.com/beetbox/beets/pull/4807
+    - better_mbsubmit
     - check
 pluginpath: 
     - /home/doron/repos/beets-import_history/beetsplug
-    - /home/doron/repos/beets-mark-unmatched/beetsplug
+    - /home/doron/repos/beets-better-mbsubmit/beetsplug
     - /home/doron/repos/beets-check/beetsplug
 threaded: yes
 timeout: 5.0
