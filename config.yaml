@@ -63,13 +63,17 @@ plugins:
     - smartplaylist
     - replaygain
     - spotify
+    # Suggested upstream at https://github.com/beetbox/beets/pull/4748,
+    # currently relies upon a symlink to:
+    # ~/repos/beets-import_history/beetsplug
     - importhistory
-    # See: https://github.com/beetbox/beets/pull/4807
-    - better_mbsubmit
+    # merged upstream, but not yet released:
+    # https://github.com/beetbox/beets/pull/4807, available in my nixos-configs
+    # overlays
+    - mbsubmit
     - check
 pluginpath: 
     - /home/doron/repos/beets-import_history/beetsplug
-    - /home/doron/repos/beets-better-mbsubmit/beetsplug
     - /home/doron/repos/beets-check/beetsplug
 threaded: yes
 timeout: 5.0
