@@ -62,7 +62,6 @@ plugins:
     - playlist
     - smartplaylist
     - replaygain
-    - spotify
     # Suggested upstream at https://github.com/beetbox/beets/pull/4748,
     # currently relies upon a symlink to:
     # ~/repos/beets-import_history/beetsplug
@@ -183,9 +182,6 @@ lyrics:
 
 replaygain:
     backend: gstreamer
-
-spotify:
-    source_weight: 1.0
 
 include:
     - private.yaml
