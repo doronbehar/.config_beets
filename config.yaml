@@ -43,7 +43,6 @@ art_filename: cover
 max_filename_length: 0
 
 plugins:
-    - absubmit
     - inline
     - mbcollection
     - chroma
@@ -171,9 +170,6 @@ match:
     required: []
     track_length_grace: 10
     track_length_max: 30
-
-absubmit:
-    auto: yes
 
 lyrics:
     sources: google musixmatch
