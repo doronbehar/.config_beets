@@ -75,6 +75,9 @@ terminal_encoding:
 original_date: no
 id3v23: no
 va_name: Various Artists
+playlist:
+    auto: no
+    playlist_dir: /var/lib/mpd/playlists
 
 ui:
     terminal_width: 80
