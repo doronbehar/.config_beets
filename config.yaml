@@ -64,6 +64,7 @@ plugins:
     - importsource
     - mbsubmit
     - check
+    - spotify
 pluginpath: 
     - /home/doron/repos/beets-check/beetsplug
 threaded: yes
