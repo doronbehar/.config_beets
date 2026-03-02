@@ -63,6 +63,7 @@ plugins:
     - replaygain
     - importsource
     - mbsubmit
+    - musicbrainz
     - check
     - spotify
 pluginpath: 
