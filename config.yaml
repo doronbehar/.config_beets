@@ -64,7 +64,6 @@ plugins:
     - importsource
     - mbsubmit
     - musicbrainz
-    - spotify
 threaded: yes
 timeout: 5.0
 per_disc_numbering: yes
