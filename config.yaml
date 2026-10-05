@@ -132,40 +132,6 @@ match:
     # Consider every match above 90% good enough for sparing the questions
     # https://beets.readthedocs.io/en/stable/reference/config.html#autotagger-matching-options
     strong_rec_thresh: 0.10
-    medium_rec_thresh: 0.25
-    rec_gap_thresh: 0.25
-    max_rec:
-        missing_tracks: medium
-        unmatched_tracks: medium
-    distance_weights:
-        source: 2.0
-        artist: 3.0
-        album: 3.0
-        media: 1.0
-        mediums: 1.0
-        year: 1.0
-        country: 0.5
-        label: 0.5
-        catalognum: 0.5
-        albumdisambig: 0.5
-        album_id: 5.0
-        tracks: 2.0
-        missing_tracks: 0.9
-        unmatched_tracks: 0.6
-        track_title: 3.0
-        track_artist: 2.0
-        track_index: 1.0
-        track_length: 2.0
-        track_id: 5.0
-    preferred:
-        countries: []
-        media: []
-        original_year: no
-    ignored: []
-    required: []
-    track_length_grace: 10
-    track_length_max: 30
-
 lyrics:
     sources: google musixmatch
     # Takes too much network resources for not being particularly important
