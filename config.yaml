@@ -136,9 +136,6 @@ lyrics:
     # Takes too much network resources for not being particularly important
     auto: no
 
-importhistory:
-    suggest_removal: True
-
 replaygain:
     backend: gstreamer
 
